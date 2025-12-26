@@ -2,11 +2,23 @@ what I learned, what I found most challenging, what I could have done differentl
 
 What I found most challenging and what did you learn?
 
-Since I had minor experience on web development I haven't had a single clue on how to start working with React nor how do I put my idea into a fully blank white website. Minor attempts was made but I had to go back and look through tutorials and I've gotten some basic features like button and format componet using css. However, I havent got a clue on how to use these basic parts to craft something entirely bigger without the need of instructions, so I did what any average man would've done if they were overly frustrated, I sat at my couch, look at my phone and scroll through insta. Not the best choice, I would say for a break to tackle a problem, but it did take my minds off the project for a while. It was only through one reel I've saw that change how I approach alot of my problems. Legos, yea legos the pieces you use to build anything in the world. I always wonder how in the hell do people make these cool lego creation without looking at the instruction. So I sat through a video on cool lego creation and they talked about kinds of pieces, showing ninjago collections but then they talked about compoents, parts of the lego project and that started off what made me learn more about programming. Componets, parts of the bigger picture, You don't entirely make something out of thin air without understanding what made that something into something. So I use that experience break down the problems and I've achieved a tic-tac-toe game.
+Since I had minor experience on web development I haven't had a single clue on how to start working with React nor how do I put my idea into a fully blank white website. 
+Minor attempts was made but I had to go back and look through tutorials and I've gotten some basic features like button and format componet using css. 
+However, I havent got a clue on how to use these basic parts to craft something entirely bigger without the need of instructions, so I did what any average man would've done if they were overly frustrated, 
+I sat at my couch, look at my phone and scroll through insta. Not the best choice, I would say for a break to tackle a problem, but it did take my minds off the project for a while. 
+It was only through one reel I've saw that change how I approach alot of my problems. 
+Legos, yea legos the pieces you use to build anything in the world. 
+I always wonder how in the hell do people make these cool lego creation without looking at the instruction. 
+So I sat through a video on cool lego creation and they talked about kinds of pieces, showing ninjago collections but then they talked about compoents, parts of the lego project and that started off what made me learn more about programming. 
+Componets, parts of the bigger picture, You don't entirely make something out of thin air without understanding what made that something into something. 
+So I use that experience break down the problems and I've achieved a tic-tac-toe game.
 
 What could've done differently and how I could've improved?
 
-My approach for checking win conditions is entirely over-complicated. Basically I've generated all the combinations of rows, columns and diagonals and check if the values are all the same. However, this is entirely too complicated a better approach would be by checking the index of what the user have played and check around the squares for the win conditions. This would remove making too much space for my program and without needed an abundance of arrays evertime I render. It would also be scalable through different sizes of the gameboard instead forcing me through a same rectangular size. 
+My approach for checking win conditions is entirely over-complicated. Basically I've generated all the combinations of rows, columns and diagonals and check if the values are all the same. 
+However, this is entirely too complicated a better approach would be by checking the index of what the user have played and check around the squares for the win conditions. 
+This would remove making too much space for my program and without needed an abundance of arrays evertime I render. 
+It would also be scalable through different sizes of the gameboard instead forcing me through a same rectangular size. 
 
 
 
