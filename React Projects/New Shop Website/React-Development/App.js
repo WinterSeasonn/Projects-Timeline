@@ -16,7 +16,7 @@ function button_test(post_function){
 function post_function(){
   const sendmessage = async () => {
     try{
-    const response = await fetch('http://localhost:8080/api/user', {
+    const response = await fetch('http://localhost:8080/user/test', {
       method: 'POST', //What Method
       headers: {
         'Content-Type': 'application/json' //What Content Type
@@ -32,12 +32,29 @@ function post_function(){
 }
 
 function sending_message(e){
-  e.preventDefault(); 
+  console.log(e)
+  e.preventDefault();
 
   const form = e.target;
   const formJson = Object.fromEntries(new FormData(form).entries());
   console.log(formJson)
-
+  const sendmessage = async() => {
+    try{
+      const response = await fetch('http://localhost:8080/user/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formJson)
+      })
+      const data = await response.text()
+      console.log(data)
+    } catch (error){
+      console.log(error)
+    }
+  }
+  
+  sendmessage();
 }
 
 function App() {
@@ -45,7 +62,8 @@ function App() {
     <div className="App">
       <form method="post" onSubmit={sending_message}>
         <label>
-          <input name="test_input" />
+          <input name="username" />
+          <input name="password" />
         </label>
          <button type="submit">submit_test</button>
       </form>
